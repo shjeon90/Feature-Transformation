@@ -42,3 +42,11 @@ Note that, in current implementation, Kernel methods only support `rbf` and `lin
 However, it is easy to extend the kernel function, such as `tanh` or `poly`.
 Obviously, if you set `linear` as kernel function in both kernel methods, 
 the results are exactly same with the standard methods.
+
+##Requirements
+```
+> numpy
+> scikit-learn
+```
+Currently, kernel methods in this project depend on the scikit-learn library 
+for calculating the pair-wise kernel matrix.
