@@ -13,7 +13,8 @@ Even if I referred to the library, all algorithms perfectly work without the lib
 One important things in my project is that the project supports the Kernel-FDA, which is unsupported by Scikit-learn library.
 Feel free to use my implementation!
 
-##Usage
+Usage
+==
 For PCA,
 ```
 >> from PCA import PCA
@@ -43,7 +44,8 @@ However, it is easy to extend the kernel function, such as `tanh` or `poly`.
 Obviously, if you set `linear` as kernel function in both kernel methods, 
 the results are exactly same with the standard methods.
 
-##Requirements
+Requirements
+==
 ```
 > numpy
 > scikit-learn
