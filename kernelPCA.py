@@ -1,3 +1,8 @@
+'''
+author: Seungho Jeon
+e-mail: ohgnu90@korea.ac.kr
+'''
+
 import numpy as np
 from sklearn.metrics.pairwise import rbf_kernel, linear_kernel
 from sklearn.utils.extmath import svd_flip

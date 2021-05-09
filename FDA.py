@@ -1,3 +1,8 @@
+'''
+author: Seungho Jeon
+e-mail: ohgnu90@korea.ac.kr
+'''
+
 import numpy as np
 
 class FisherDiscriminantAnalysis:
