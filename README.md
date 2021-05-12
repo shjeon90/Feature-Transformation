@@ -6,6 +6,7 @@ I manually implemented some feature transformation algorithms with Python3. Curr
 2. Fisher Discriminant Analysis (FDA)
 3. Kernel-Principal Component Analysis (KernelPCA)
 4. Kernel-Fisher Discriminant Analysis (Kernel FDA)
+5. Locally Linear Embedding (LLE)
 
 I designed the algorithms in Scikit-learn library style, which means each class implementing the algorithms has `fit`, `transform`, and `fit_transform` methods.
 These methods work exactly same with the methods in Scikit-learn library. 
@@ -39,6 +40,13 @@ For, Kernel-FDA
 >> kfda = KernelFisherDiscriminantAnalysis(n_components=2, kernel='rbf', gamma=2)
 >> X_ = kfda.fit_transform(X)
 ```
+For, LLE
+```
+>> from LLE import LocallyLinearEmbedding
+>> lle = LocallyLinearEmbedding(n_components=2)
+>> X_ = lle.fit_transform(X)
+```
+
 Note that, in current implementation, Kernel methods only support `rbf` and `linear` kernel.
 However, it is easy to extend the kernel function, such as `tanh` or `poly`.
 Obviously, if you set `linear` as kernel function in both kernel methods, 
